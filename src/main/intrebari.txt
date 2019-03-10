@@ -1,0 +1,42 @@
+Cine a fost Ion Creanga?
+1) Scriitor
+2) Politician
+3) Sportiv
+1
+Literatura
+##
+Care este cel mai inalt varf din tara noastra?
+1) Omu
+2) Moldoveanu
+3) Apuseni
+2
+Geografie
+##
+Cine a scris Tiganiada?
+1) Mihai Eminescu
+2) Mircea Cartarescu
+3) Ion Budai Deleanu
+3
+Literatura
+##
+De unde era Arhimede?
+1) Cluj
+2) Atena
+3) Bucuresti
+2
+Fizica
+##
+Care e formula sarii de bucatarie?
+1) NaCl
+2) O2
+3) H2O
+1
+Chimie
+##
+Cum se numesc celulele nervoase?
+1) Fibre
+2) Neuroni
+3) Epiteliu
+2
+Biologie
+##
