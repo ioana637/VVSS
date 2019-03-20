@@ -70,10 +70,8 @@ public class StartApp {
                     System.out.println("Introduceti domeniul intrebarii");
                     domeniu = console.readLine();
 
-                    Intrebare intrebare;
                     try {
-                        intrebare = new Intrebare(enunt, raspuns1, raspuns2, raspuns3, raspunsCorect, domeniu);
-                        appService.addNewIntrebare(intrebare);
+                        appService.addNewIntrebare(enunt,raspuns1,raspuns2,raspuns3,raspunsCorect,domeniu);
                     } catch (IntrebareValidatorFailedException e) {
                         System.err.println("Intrebarea nu a fost corect introdusa");
                         System.err.println(e.getMessage());

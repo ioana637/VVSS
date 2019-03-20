@@ -21,7 +21,9 @@ public class AppService {
 		this.intrebariRepository = intrebariRepository;
 	}
 	
-	public Intrebare addNewIntrebare(Intrebare intrebare) throws DuplicateIntrebareException, IntrebareValidatorFailedException {
+	public Intrebare addNewIntrebare(String enunt, String raspuns1, String raspuns2, String raspuns3, String
+			raspunsCorect, String domeniu) throws DuplicateIntrebareException, IntrebareValidatorFailedException {
+		Intrebare intrebare = new Intrebare(enunt,raspuns1,raspuns2,raspuns3,raspunsCorect,domeniu);
 		intrebariRepository.addIntrebare(intrebare);
 		return intrebare;
 	}
