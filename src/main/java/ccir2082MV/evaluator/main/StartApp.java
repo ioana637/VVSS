@@ -71,7 +71,8 @@ public class StartApp {
                     domeniu = console.readLine();
 
                     try {
-                        appService.addNewIntrebare(enunt,raspuns1,raspuns2,raspuns3,raspunsCorect,domeniu);
+//                        appService.addNewIntrebare(enunt,raspuns1,raspuns2,raspuns3,raspunsCorect,domeniu);
+                        appService.addNewIntrebare(enunt,raspuns1,raspuns2,raspuns3,raspunsCorect,null);
                     } catch (IntrebareValidatorFailedException e) {
                         System.err.println("Intrebarea nu a fost corect introdusa");
                         System.err.println(e.getMessage());
