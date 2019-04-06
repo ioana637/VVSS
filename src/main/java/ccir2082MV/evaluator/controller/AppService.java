@@ -47,14 +47,11 @@ public class AppService {
 		
 		while(testIntrebari.size() != 5){
 			intrebare = intrebariRepository.pickRandomIntrebare();
-			
 			if(!testIntrebari.contains(intrebare) && !domenii.contains(intrebare.getDomeniu())){
 				testIntrebari.add(intrebare);
 				domenii.add(intrebare.getDomeniu());
 			}
-			
 		}
-		
 		test.setIntrebari(testIntrebari);
 		return test;
 		

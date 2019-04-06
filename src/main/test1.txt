@@ -1,0 +1,7 @@
+Cine a fost Ion Creanga?
+1) Scriitor
+2) Politician
+3) Sportiv
+1
+Literatura
+##
