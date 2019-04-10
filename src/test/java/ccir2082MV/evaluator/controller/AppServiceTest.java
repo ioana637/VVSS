@@ -2,8 +2,10 @@ package ccir2082MV.evaluator.controller;
 
 import ccir2082MV.evaluator.exception.DuplicateIntrebareException;
 import ccir2082MV.evaluator.exception.IntrebareValidatorFailedException;
+import ccir2082MV.evaluator.exception.NotAbleToCreateStatisticsException;
 import ccir2082MV.evaluator.exception.NotAbleToCreateTestException;
 import ccir2082MV.evaluator.model.Intrebare;
+import ccir2082MV.evaluator.model.Statistica;
 import ccir2082MV.evaluator.repository.IntrebariRepository;
 import ccir2082MV.evaluator.validator.IValidator;
 import ccir2082MV.evaluator.validator.IntrebariValidator;
@@ -22,21 +24,15 @@ public class AppServiceTest {
     private static List<String> listOfFiles = new ArrayList();
     private static Integer index;
 
-//    @BeforeClass
-//    public static void setUpAll() {
-//        System.out.println("Setup for all subsequent tests...");
-//        IValidator<Intrebare> validator = new IntrebariValidator();
-//        IntrebariRepository repository = new IntrebariRepository(validator);
-//        appService = new AppService(repository);
-//    }
-
     @BeforeClass
     public static void setUpAll() {
         System.out.println("Setup for all subsequent tests...");
 //setup
         listOfFiles.add("E:\\IdeaProjects\\VVSS\\Lab01\\src\\main\\test1.txt");
+        listOfFiles.add("E:\\IdeaProjects\\VVSS\\Lab01\\src\\main\\test1.txt");
         listOfFiles.add("E:\\IdeaProjects\\VVSS\\Lab01\\src\\main\\test2.txt");
         listOfFiles.add("E:\\IdeaProjects\\VVSS\\Lab01\\src\\main\\test3.txt");
+        System.out.println(listOfFiles.size());
         index = 0;
     }
 
@@ -46,9 +42,9 @@ public class AppServiceTest {
         IValidator<Intrebare> validator = new IntrebariValidator();
         IntrebariRepository repository = new IntrebariRepository(validator);
         appService = new AppService(repository);
-        if (index >14) {
+        if (index >=15 && index<=19) {
             try {
-                appService.loadIntrebariFromFile(listOfFiles.get(index-14));
+                appService.loadIntrebariFromFile(listOfFiles.get(index-15));
             } catch (IntrebareValidatorFailedException e) {
                 System.err.println(e.getMessage());
             }
@@ -60,6 +56,27 @@ public class AppServiceTest {
         System.out.println("Tear down");
         index++;
     }
+
+    /*---------------------F03----BLACK BOX----------------------------------------*/
+    @Test(expected = NotAbleToCreateStatisticsException.class)
+    public void createStatisticsF03_TC1_nonvalid() throws NotAbleToCreateStatisticsException {
+        this.appService.getStatistica();
+    }
+
+    @Test
+    public void createStatisticsF03_TC2_valid() {
+        try {
+            Statistica statistica = appService.getStatistica();
+            assertTrue(true);
+            assertTrue(statistica.getIntrebariDomenii().containsKey("Literatura"));
+            assertTrue(statistica.getIntrebariDomenii().get("Literatura") == 1);
+        } catch (NotAbleToCreateStatisticsException e) {
+            assertTrue(false);
+            e.printStackTrace();
+        }
+
+    }
+
 
     /*-----------------------F02!!!---------------------------------------------*/
 
