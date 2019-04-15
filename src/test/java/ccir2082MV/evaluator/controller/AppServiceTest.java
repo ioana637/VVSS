@@ -29,7 +29,6 @@ public class AppServiceTest {
         System.out.println("Setup for all subsequent tests...");
 //setup
         listOfFiles.add("E:\\IdeaProjects\\VVSS\\Lab01\\src\\main\\test1.txt");
-        listOfFiles.add("E:\\IdeaProjects\\VVSS\\Lab01\\src\\main\\test1.txt");
         listOfFiles.add("E:\\IdeaProjects\\VVSS\\Lab01\\src\\main\\test2.txt");
         listOfFiles.add("E:\\IdeaProjects\\VVSS\\Lab01\\src\\main\\test3.txt");
         System.out.println(listOfFiles.size());
@@ -42,13 +41,6 @@ public class AppServiceTest {
         IValidator<Intrebare> validator = new IntrebariValidator();
         IntrebariRepository repository = new IntrebariRepository(validator);
         appService = new AppService(repository);
-        if (index >=15 && index<=19) {
-            try {
-                appService.loadIntrebariFromFile(listOfFiles.get(index-15));
-            } catch (IntrebareValidatorFailedException e) {
-                System.err.println(e.getMessage());
-            }
-        }
     }
 
     @After
@@ -66,6 +58,11 @@ public class AppServiceTest {
     @Test
     public void createStatisticsF03_TC2_valid() {
         try {
+            appService.loadIntrebariFromFile(listOfFiles.get(0));
+        } catch (IntrebareValidatorFailedException e) {
+            System.err.println(e.getMessage());
+        }
+        try {
             Statistica statistica = appService.getStatistica();
             assertTrue(true);
             assertTrue(statistica.getIntrebariDomenii().containsKey("Literatura"));
@@ -82,16 +79,31 @@ public class AppServiceTest {
 
     @Test(expected = NotAbleToCreateTestException.class)
     public void createNewTestF02_TC01() throws NotAbleToCreateTestException {
+        try {
+            appService.loadIntrebariFromFile(listOfFiles.get(0));
+        } catch (IntrebareValidatorFailedException e) {
+            System.err.println(e.getMessage());
+        }
         appService.createNewTest();
     }
 
     @Test(expected = NotAbleToCreateTestException.class)
     public void createNewTestF02_TC02() throws NotAbleToCreateTestException {
+        try {
+            appService.loadIntrebariFromFile(listOfFiles.get(1));
+        } catch (IntrebareValidatorFailedException e) {
+            System.err.println(e.getMessage());
+        }
         appService.createNewTest();
     }
 
     @Test
     public void createNewTestF02_TC03() {
+        try {
+            appService.loadIntrebariFromFile(listOfFiles.get(2));
+        } catch (IntrebareValidatorFailedException e) {
+            System.err.println(e.getMessage());
+        }
         try {
             appService.createNewTest();
             assertTrue(true);
