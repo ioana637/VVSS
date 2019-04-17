@@ -27,6 +27,11 @@ public class AppServiceTestBigBang {
     public static void setUpAll() {
         System.out.println("Setup for all subsequent tests...");
         //setup
+    }
+
+    @Before
+    public void setUp() {
+        System.out.println("Setup for each subsequent test...");
         IValidator<Intrebare> validator = new IntrebariValidator();
         IntrebariRepository repository = new IntrebariRepository(validator);
         appService = new AppService(repository);
@@ -35,11 +40,6 @@ public class AppServiceTestBigBang {
         } catch (IntrebareValidatorFailedException e) {
             System.err.println(e.getMessage());
         }
-    }
-
-    @Before
-    public void setUp() {
-        System.out.println("Setup for each subsequent test...");
     }
 
     @After
@@ -95,9 +95,7 @@ public class AppServiceTestBigBang {
             Statistica statistica = appService.getStatistica();
             assertTrue(true);
             assertTrue(statistica.getIntrebariDomenii().containsKey("Literatura"));
-            assertTrue(statistica.getIntrebariDomenii().containsKey("M"));
             assertTrue(statistica.getIntrebariDomenii().get("Literatura") == 1);
-            assertTrue(statistica.getIntrebariDomenii().get("M") == 1);
         } catch (NotAbleToCreateStatisticsException e) {
             assertTrue(false);
             e.printStackTrace();
@@ -112,9 +110,12 @@ public class AppServiceTestBigBang {
                     "1", "B");
             intrebare3 = appService.addNewIntrebare("Enunt?", "1) Raspuns1", "2) Raspuns2", "3) Raspuns3",
                     "1", "C");
+            intrebare4 = appService.addNewIntrebare("Enunt?", "1) Raspuns1", "2) Raspuns2", "3) Raspuns3",
+                    "1", "D");
             assertTrue(appService.exists(intrebare1));
             assertTrue(appService.exists(intrebare2));
             assertTrue(appService.exists(intrebare3));
+            assertTrue(appService.exists(intrebare4));
         } catch (DuplicateIntrebareException | IntrebareValidatorFailedException e) {
             e.printStackTrace();
             assertTrue(false);
@@ -128,6 +129,7 @@ public class AppServiceTestBigBang {
             assertTrue(test.getIntrebari().contains(intrebare1));
             assertTrue(test.getIntrebari().contains(intrebare2));
             assertTrue(test.getIntrebari().contains(intrebare3));
+            assertTrue(test.getIntrebari().contains(intrebare4));
         } catch (NotAbleToCreateTestException e) {
             assertTrue(false);
             e.printStackTrace();
