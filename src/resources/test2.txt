@@ -1,0 +1,35 @@
+Cine a fost Ion Creanga?
+1) Scriitor
+2) Politician
+3) Sportiv
+1
+Literatura
+##
+Cine a fost Mihai Eminescu?
+1) Scriitor
+2) Politician
+3) Sportiv
+1
+Literatura
+##
+Cine a fost Nicolae Iorga?
+1) Scriitor
+2) Politician
+3) Sportiv
+1
+Literatura
+##
+Cine a fost Nichita Stanescu?
+1) Scriitor
+2) Politician
+3) Sportiv
+1
+Literatura
+##
+Cine a fost Ion Barbu?
+1) Scriitor
+2) Politician
+3) Sportiv
+1
+Literatura
+##

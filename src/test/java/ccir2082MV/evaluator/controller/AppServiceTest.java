@@ -28,9 +28,9 @@ public class AppServiceTest {
     public static void setUpAll() {
         System.out.println("Setup for all subsequent tests...");
 //setup
-        listOfFiles.add("E:\\IdeaProjects\\VVSS\\Lab01\\src\\main\\test1.txt");
-        listOfFiles.add("E:\\IdeaProjects\\VVSS\\Lab01\\src\\main\\test2.txt");
-        listOfFiles.add("E:\\IdeaProjects\\VVSS\\Lab01\\src\\main\\test3.txt");
+        listOfFiles.add("./src/resources/test1.txt");
+        listOfFiles.add("./src/resources/test2.txt");
+        listOfFiles.add("./src/resources/test3.txt");
         System.out.println(listOfFiles.size());
         index = 0;
     }
@@ -68,8 +68,8 @@ public class AppServiceTest {
             assertTrue(statistica.getIntrebariDomenii().containsKey("Literatura"));
             assertTrue(statistica.getIntrebariDomenii().get("Literatura") == 1);
         } catch (NotAbleToCreateStatisticsException e) {
-            assertTrue(false);
             e.printStackTrace();
+            assertTrue(false);
         }
 
     }

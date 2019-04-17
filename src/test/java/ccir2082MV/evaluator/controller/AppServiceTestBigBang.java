@@ -21,7 +21,7 @@ import static org.junit.Assert.assertTrue;
 
 public class AppServiceTestBigBang {
     private static AppService appService;
-    private static String file = "E:\\IdeaProjects\\VVSS\\Lab01\\src\\main\\test1.txt";
+    private static String file = "./src/resources/test1.txt";
 
     @BeforeClass
     public static void setUpAll() {
@@ -88,7 +88,7 @@ public class AppServiceTestBigBang {
     /*-----------------------Testare big-bang modul P->C->A->B | A,B,C valid---------------------------------------*/
 
     @Test
-    public void z_bigBang_TC01() {
+    public void bigBang_TC01() {
         /*----------------------------Modul C------------------------*/
 
         try {
@@ -102,7 +102,7 @@ public class AppServiceTestBigBang {
         }
 
         /*----------------------------Modul A------------------------*/
-        Intrebare intrebare1 = null, intrebare2 = null, intrebare3 = null;
+        Intrebare intrebare1 = null, intrebare2 = null, intrebare3 = null, intrebare4 = null;
         try {
             intrebare1 = appService.addNewIntrebare("Enunt?", "1) Raspuns1", "2) Raspuns2", "3) Raspuns3",
                     "1", "A");

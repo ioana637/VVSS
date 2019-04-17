@@ -21,7 +21,7 @@ import static org.junit.Assert.assertTrue;
 
 public class AppServiceTestTopDown {
     private static AppService appService;
-    private static String file = "E:\\IdeaProjects\\VVSS\\Lab01\\src\\main\\test1.txt";
+    private static String file = "./src/resources/test1.txt";
 
     @BeforeClass
     public static void setUpAll() {
@@ -87,7 +87,7 @@ public class AppServiceTestTopDown {
 
     /*-----------------------Testare de integrare TOP DOWN P->A | A-valid ----------------------------------------*/
     @Test
-    public void z_topDown_TC01() {
+    public void topDown_TC01() {
         try {
             Intrebare intrebare = appService.addNewIntrebare("Enunt?", "1) Raspuns1", "2) Raspuns2", "3) Raspuns3",
                     "1", "M");
@@ -107,7 +107,7 @@ public class AppServiceTestTopDown {
 
     /*-----------------------Testare de integrare TOP DOWN P->A->B | A,B valid---------------------------------*/
     @Test
-    public void z_topDown_TC02() {
+    public void topDown_TC02() {
         try {
             Intrebare intrebare = appService.addNewIntrebare("Enunt?", "1) Raspuns1", "2) Raspuns2", "3) Raspuns3",
                     "1", "M");
@@ -141,7 +141,7 @@ public class AppServiceTestTopDown {
 
     /*-----------------------Testare de integrare TOP DOWN P->A->B->C | A,B,C valid -------------------------------*/
     @Test
-    public void z_topDown_TC03() {
+    public void topDown_TC03() {
         try {
             Intrebare intrebare = appService.addNewIntrebare("Enunt?", "1) Raspuns1", "2) Raspuns2", "3) Raspuns3",
                     "1", "M");
