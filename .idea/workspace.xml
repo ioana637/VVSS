@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac521e38-98fc-4902-8578-388b969d3825" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/resources/test1.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/resources/test2.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/resources/test3.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Lab01.iml" afterPath="$PROJECT_DIR$/Lab01.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTest.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTestBigBang.java" afterPath="$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTestBigBang.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTestTopDown.java" afterPath="$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTestTopDown.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ccir2082MV/evaluator/repository/IntrebariRepository.class" afterPath="$PROJECT_DIR$/target/classes/ccir2082MV/evaluator/repository/IntrebariRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ccir2082MV/evaluator/controller/AppServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/ccir2082MV/evaluator/controller/AppServiceTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ccir2082MV/evaluator/controller/AppServiceTestBigBang.class" afterPath="$PROJECT_DIR$/target/test-classes/ccir2082MV/evaluator/controller/AppServiceTestBigBang.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ccir2082MV/evaluator/controller/AppServiceTestTopDown.class" afterPath="$PROJECT_DIR$/target/test-classes/ccir2082MV/evaluator/controller/AppServiceTestTopDown.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppServiceTestBigBang.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AppServiceTestBigBang.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTestBigBang.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="90" column="16" lean-forward="false" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
+            <state relative-caret-position="102">
+              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntrebariRepository.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IntrebariRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ccir2082MV/evaluator/repository/IntrebariRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="143">
@@ -86,8 +76,8 @@
       <file leaf-file-name="AppServiceTestTopDown.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTestTopDown.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="193" column="1" lean-forward="true" selection-start-line="193" selection-start-column="1" selection-end-line="193" selection-end-column="1" />
+            <state relative-caret-position="272">
+              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1587#1588#0" expanded="true" />
@@ -155,8 +145,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ccir2082MV/evaluator/repository/IntrebariRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTestTopDown.java" />
         <option value="$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTestBigBang.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTestTopDown.java" />
       </list>
     </option>
   </component>
@@ -356,7 +346,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppServiceTestTopDown">
+  <component name="RunManager" selected="JUnit.AppServiceTestBigBang">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -571,8 +561,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AppServiceTestTopDown" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AppServiceTestBigBang" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AppServiceTestBigBang" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AppServiceTestTopDown" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.AppServiceTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.AppServiceTest.createNewTestF02_TC02" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.AppServiceTest.createNewTestF02_TC03" />
@@ -609,14 +599,11 @@
       <workItem from="1554917552107" duration="1017000" />
       <workItem from="1554963643245" duration="745000" />
       <workItem from="1555305287757" duration="1216000" />
-      <workItem from="1555407654439" duration="1899000" />
+      <workItem from="1555407654439" duration="2592000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppServiceTest - 2019.04.17 at 15h 49m 12s.xml">
-      <configuration name="AppServiceTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppServiceTest - 2019.04.17 at 15h 52m 06s.xml">
       <configuration name="AppServiceTest" configurationId="JUnit" />
     </history-entry>
@@ -644,9 +631,12 @@
     <history-entry file="AppServiceTestTopDown - 2019.04.17 at 15h 56m 20s.xml">
       <configuration name="AppServiceTestTopDown" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppServiceTestTopDown - 2019.04.17 at 16h 07m 33s.xml">
+      <configuration name="AppServiceTestTopDown" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51941000" />
+    <option name="totallyTimeSpent" value="52634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1082,28 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTestTopDown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="193" column="1" lean-forward="true" selection-start-line="193" selection-start-column="1" selection-end-line="193" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTestBigBang.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="90" column="16" lean-forward="false" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ccir2082MV/evaluator/repository/IntrebariRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -1114,6 +1082,28 @@
             <element signature="e#2163#2164#0" expanded="true" />
             <element signature="e#2221#2222#0" expanded="true" />
             <element signature="e#2377#2388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTestTopDown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1587#1588#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ccir2082MV/evaluator/controller/AppServiceTestBigBang.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

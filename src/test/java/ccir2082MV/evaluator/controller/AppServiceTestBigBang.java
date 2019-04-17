@@ -88,7 +88,7 @@ public class AppServiceTestBigBang {
     /*-----------------------Testare big-bang modul P->C->A->B | A,B,C valid---------------------------------------*/
 
     @Test
-    public void bigBang_TC01() {
+    public void z_bigBang_TC01() {
         /*----------------------------Modul C------------------------*/
 
         try {
